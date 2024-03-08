@@ -2,7 +2,7 @@ import connectDB from "./mongodb.js";
 
 const deleteItemsFromDB = async() => {
     const db = await connectDB();
-    const result = await db.deleteOne({name: "X-15 dell"});
+    const result = await db.deleteOne({category: "Laptop"});
     console.log(result);
 }
 
